@@ -17,6 +17,7 @@ A card is considered valid if it meets the following:
 You will need at least Python 3.7 and the packages listed in *requirements.txt*.
 
 To install the packages using *requirements.txt*, run the following command:
+
 `pip install -r requirements.txt`
 
 In addition, you will also need to install poppler for converting PDFs to images and pytesseract for object character recognition (OCR). 
@@ -33,6 +34,7 @@ Double-click the .exe file and follow the instructions to install the software.
 Go to https://github.com/oschwartz10612/poppler-windows/releases/ and download and unzip *Release-21.10.0-0.zip*.
 
 Next, download the code for this tool using the following command:
+
 `git clone https://github.com/lisa-mml/card_parser.git`
 
 Once pytesseract and poppler are installed, change the paths to pytesseract and poppler to the paths on your computer in the *config.json* file.
