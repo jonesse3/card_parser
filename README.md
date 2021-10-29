@@ -55,12 +55,17 @@ Parameters:
 
 ## Example with test images
 
-We have provided the following test images in the test_images folder. 
+We have provided the following images in the test_images folder for testing the tool. 
 
 ![Image 1](/test_images/255555_vaccine_card.PNG)
 
 PHOTOGRAPH: CARLOS AVILA GONZALEZ/SAN FRANCISCO CHRONICLE/GETTY IMAGES
 
+![Image 2](/test_images/24444_vaccine_card.jpg)
+
+PHOTOGRAPH: MELISSA PHILLIP/HOUSTON CHRONICLE
+
+An example of the CSV output is provided for the above two images: *example_vaccine_data.csv*
 
 ## Limitations and Future Work
 
