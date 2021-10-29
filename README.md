@@ -36,7 +36,7 @@ Parameters:
  * vaccine: CSV file containing WHO approved vaccines
  * config: JSON file containing full paths to Poppler and Pytesseract
 
-## Description of output file
+## Description of CSV output file
 
 | Variable  | Data type | Description
 | ----------| ----------| -----------|
