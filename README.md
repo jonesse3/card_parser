@@ -50,7 +50,7 @@ Example:
 Parameters:
 
  * *dir*: directory containing vaccine card images
- * *vaccine*: CSV file containing WHO approved vaccines
+ * *vaccine*: EXCEL file containing WHO approved vaccines
  * *config*: JSON file containing full paths to Poppler and Pytesseract
 
 ## Description of CSV output file
