@@ -57,7 +57,8 @@ Parameters:
 
 We have provided the following test images in the test_images folder. 
 
-![Image 1](/test_images/255555_vaccine_card.PNG =250x250)
+![Image 1](/test_images/255555_vaccine_card.PNG)
+
 PHOTOGRAPH: CARLOS AVILA GONZALEZ/SAN FRANCISCO CHRONICLE/GETTY IMAGES
 
 
