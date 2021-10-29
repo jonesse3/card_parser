@@ -248,7 +248,7 @@ def main(args):
     card_data = list(zip(filenames, ids, covid_words, dates, manufacturer, lots, flags))
 
     # convert to dataframe
-    df = pd.DataFrame(card_data, columns = ["filename","hhs_id","has_covid_words","vax_dates","manufacturer", "lot_numbers","flags"])
+    df = pd.DataFrame(card_data, columns = ["filename","id","has_covid_words","vax_dates","manufacturer", "lot_numbers","flags"])
 
     # add columns
     df["has_at_least_one_lot_number"] = df["lot_numbers"].apply(lambda x: 1 if len(x) > 0 else 0)
