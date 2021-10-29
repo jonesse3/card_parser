@@ -20,6 +20,8 @@ Pytesseract
 
 Poppler
 
+`git clone https://github.com/lisa-mml/card_parser.git`
+
 ## How to Use
 
 `python card_parser.py -dir path/to/directory -vaccine path/to/file -config path/to/file`
