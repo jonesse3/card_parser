@@ -6,7 +6,7 @@ The purpose of this tool is to extract text from vaccine cards and generate a CS
 
 A card is considered valid if it meets the following:
 
-1. Contains the phrase "COVID-19 Vaccination" **AND**
+1. Contains the phrase "COVID-19 Vaccination Record" or "COVID-19 Vaccine" **AND**
 2. Has at least 2 out of the 3 criteria:
    * Has at least one dose date (dates are expected to be in month day year format)
    * Has a manufacturer
@@ -59,7 +59,7 @@ Parameters:
 | ----------| ----------| -----------|
 | filename  | string  | name of file |
 | hhs_id  | string | individual's ID number |
-| has_covid_words | string | *yes* or *no* if card has the phrase "COVID-19 vaccination" |
+| has_covid_words | string | *yes*  or *no* Does card have the phrase "COVID-19 Vaccination Record" or "COVID-19 Vaccine"? |
 | vax_dates | list of strings | any date from 2020 and 2021 |
 | manufacturer | string | vaccine manufacturer (i.e. *Pfizer*) |
 | lot_numbers | list of strings | lot number | 
@@ -84,10 +84,15 @@ PHOTOGRAPH: MELISSA PHILLIP/HOUSTON CHRONICLE
 
 An example of the CSV output is provided for the above two images: *example_vaccine_data.csv*
 
-## Limitations and Future Work
+## Limitations:
+* This tool only works for typed, English text.
+* This tool does not currently handle HEIC or PDF files, but support for both file types is in progress.
+* Card orientation may be a problem. We did not include a step to check the orientation of the card before extracting the text, though this is something that can be added.
+* This tool was optimized for US CDC COVID-19 Vaccination cards and may not perform as well for other vaccine documentation (such as international cards or medical records).
+* Only one manufacturer is selected from this tool, so it will not accurately capture documentation for vaccines with doses from different manufacturers.
+* Multiple delimiters for dates are accepted but the order needs to be month, day, year to be captured by this tool.
 
-The main limitation of this tool is that it performs poorly on extracting text from handwritten images. Utilizing services such as Google's Google Cloud Vision API, Microsoft's Azure Computer Vision API, and Amazon's Textract and Rekognition will improve the performance of this tool on handwritten images.
-
-As of now, this tool does not handle HEIC files. Further work is needed to convert HEIC to JPEG. 
-
-In addition, the orientation of the card may be problem. We did not include a step to check the orientation of the card before extracting the text, though this is something that can be added.
+## Future directions:
+* Additional file support (PDF and HEIC) in development.
+* Card orientation verification and improvement is in development.
+* The main limitation of this tool is that it performs poorly on extracting text from handwritten images. Utilizing services such as Google's Google Cloud Vision API, Microsoft's Azure Computer Vision API, and Amazon's Textract and Rekognition will improve the performance of this tool on handwritten images.
