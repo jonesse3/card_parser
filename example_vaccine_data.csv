@@ -1,3 +1,3 @@
-filename,hhs_id,has_covid_words,vax_dates,manufacturer,lot_numbers,flags,has_at_least_one_lot_number,has_manufacturer,has_at_least_one_date,number_valid_checks,valid
+filename,id,has_covid_words,vax_dates,manufacturer,lot_numbers,flags,has_at_least_one_lot_number,has_manufacturer,has_at_least_one_date,number_valid_checks,valid
 24444_vaccine_card.jpg,24444,yes,[],Moderna,['013A21A'],,1,1,0,2,1
 255555_vaccine_card.PNG,255555,yes,['12/30/2020'],Pfizer,['EL1284'],,1,1,1,3,1
