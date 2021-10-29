@@ -53,13 +53,12 @@ Parameters:
 | number_valid_checks | integer | 0 to 3; sum of the values of the previous 3 variables |
 | valid | integer | 1 if yes, 0 if no; card has "COVID-19 vaccination" phrase and at least 2 out of the 3 criteria met |
 
-
-
-
-
-
-
 ## Example with test images
+
+We have provided the following test images in the test_images folder. 
+
+![PHOTOGRAPH: CARLOS AVILA GONZALEZ/SAN FRANCISCO CHRONICLE/GETTY IMAGES](/test_images/255555_vaccine_card.PNG)
+
 
 ## Limitations and Future Work
 
