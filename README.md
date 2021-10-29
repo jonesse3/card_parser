@@ -2,7 +2,7 @@
 
 ## Description of the tool:
 
-This tool generates a .csv containing data extracted from images of COVID-19 Vaccine cards and similar documentation. It uses optical character recognition (OCR) to read typed text from images, then the text is searched for [data of interest](##-Description-of-CSV-output-file). Cards are assessed as valid or not valid based on [criteria](##-Validation-Criteria) for whether extracted data is sufficient in quality and quantity. Issues retrieving data result in [error flags](##-Description-of-CSV-output-file) and empty data entries. This tool only works for typed, English text and has several other [limitations](##-Limitations). Several of these are currently [being addressed](##-Future directions). 
+This tool generates a .csv containing data extracted from images of COVID-19 Vaccine cards and similar documentation. It uses optical character recognition (OCR) to read typed text from images, then the text is searched for [data of interest](#-Description-of-CSV-output-file). Cards are assessed as valid or not valid based on [criteria](#-Validation-Criteria) for whether extracted data is sufficient in quality and quantity. Issues retrieving data result in [error flags](#-Description-of-CSV-output-file) and empty data entries. This tool only works for typed, English text and has several other [limitations](#-Limitations). Several of these are currently [being addressed](#-Future-directions). 
 
 ## Validation Criteria
 
