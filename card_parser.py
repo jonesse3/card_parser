@@ -161,7 +161,7 @@ def main(args):
             total_files += 1
             i += 1
             if i%10 == 0:
-                print("{} files processed.".format(i))
+                print("{} files processed.".format(i), flush = True)
 
             # add file names and ids for all files
             filenames.append(file)
