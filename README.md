@@ -22,7 +22,7 @@ To install the packages using *requirements.txt*, run the following command:
 
 In addition, you will also need to install poppler for converting PDFs to images and pytesseract for object character recognition (OCR). 
 
-The following instructions is for installing poppler and pytesseract on a Windows computer.
+The following instructions are for installing poppler and pytesseract on a Windows computer.
 
 **Pytesseract**
 
@@ -59,7 +59,7 @@ Parameters:
 | ----------| ----------| -----------|
 | filename  | string  | name of file |
 | hhs_id  | string | individual's ID number |
-| has_covid_words | string | *yes*  or *no* Does card have the phrase "COVID-19 Vaccination Record" or "COVID-19 Vaccine"? |
+| has_covid_words | string | *yes*  or *no*; Does card have the phrase "COVID-19 Vaccination Record" or "COVID-19 Vaccine"? |
 | vax_dates | list of strings | any date from 2020 and 2021 |
 | manufacturer | string | vaccine manufacturer (i.e. *Pfizer*) |
 | lot_numbers | list of strings | lot number | 
@@ -68,7 +68,7 @@ Parameters:
 | has_manufacturer | integer | 1 if yes, 0 if no |
 | has_at_least_one_date | integer | 1 if yes, 0 if no |
 | number_valid_checks | integer | 0 to 3; sum of the values of the previous 3 variables |
-| valid | integer | 1 if yes, 0 if no; card has "COVID-19 vaccination" phrase and at least 2 out of the 3 criteria met |
+| valid | integer | 1 if yes, 0 if no; card has "yes" for has_covid_words and at least 2 out of the 3 criteria met |
 
 ## Example with test images
 
