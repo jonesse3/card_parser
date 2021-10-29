@@ -62,7 +62,7 @@ Parameters:
 | Variable  | Data type | Description
 | ----------| ----------| -----------|
 | filename  | string  | name of file |
-| hhs_id  | string | individual's ID number |
+| id  | string | individual's ID number |
 | has_covid_words | string | *yes*  or *no*; Does card have the phrase "COVID-19 Vaccination Record" or "COVID-19 Vaccine"? |
 | vax_dates | list of strings | any date from 2020 and 2021 |
 | manufacturer | string | vaccine manufacturer (i.e. *Pfizer*) |
