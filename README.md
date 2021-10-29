@@ -1,18 +1,20 @@
 # card_parser
-## About this tool
-This pipeline generates a data frame containing data extracted from images of COVID-19 Vaccine cards and similar documentation. It uses optical character recognition (OCR) to read typed text from images, then the text is searched for data of interest. Cards are assessed as valid or not valid based on whether extracted data is sufficient in quality and quantity. Issues retrieving data result in error flags and empty data entries.
+
+The purpose of this tool is to extract text from vaccine cards and generate a CSV file containing relevant information from the card. 
 
 ## Validation Criteria
-Validity of card data extraction was assessed through meeting the following requirements:
-  * Achieve a fuzzy match score of at least 0.8 to one of the terms "COVID-19 Vaccination" or "COVID-19 Vaccine" AND
-  * Meet 2 out of the 3 data criteria:
-    - Has at least one dose date
-    - Has manufacturer
-    - Has at least one lot number
+
+A card is considered valid if it meets the following:
+
+1. Contains the phrase "COVID-19 Vaccination" AND
+2. Has at least 2 out of the 3 criteria:
+ * Has at least one dose date
+ * Has a manufacturer
+ * Has at least one lot number
 
 ## Software Installation
 
-You will need at least Python 3.7. 
+You will need at least Python 3.7 to use this tool. 
 
 Pytesseract
 
@@ -26,15 +28,16 @@ Example:
 
 `python card_parser.py -dir test_images -vaccine who_approved_vaccines.xlsx -config config.json`
 
+Parameters:
+
+-dir: directory containing vaccine card images
+-vaccine: CSV file containing WHO approved vaccines
+-config: JSON file containing full paths to Poppler and Pytesseract
+
 ## Example with test images
 
-## Limitations:
-* This tool only works for typed, English text.
-* This tool does not currently handle HEIC or PDF files, but support for both file types is in progress.
-* This tool was optimized for US CDC COVID-19 Vaccination cards and may not perform as well for other vaccine documentation (such as international cards or medical records).
-* Only one manufacturer is selected from this tool, so it will not accurately capture documentation for vaccines with doses from different manufacturers.
-* Multiple delimiters for dates are accepted but the order needs to be month, day, year to be captured by this tool.
+## Limitations and Future Work
 
-## Future directions:
-* Additional file support (PDF and HEIC) in development
-* We hope to improve capture of lot numbers.
+The main limitation of this tool is that it performs poorly on extracting text from handwritten images.   
+
+As of now, this tool does not handle HEIC files. Further work is needed to convert HEIC to JPEG. 
