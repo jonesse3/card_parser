@@ -40,6 +40,8 @@ Parameters:
 
 ## Limitations and Future Work
 
-The main limitation of this tool is that it performs poorly on extracting text from handwritten images.   
+The main limitation of this tool is that it performs poorly on extracting text from handwritten images. Utilizing services such as Google's Google Cloud Vision API, Microsoft's Azure Computer Vision API, and Amazon's Textract and Rekognition will improve the performance of this tool on handwritten images.
 
 As of now, this tool does not handle HEIC files. Further work is needed to convert HEIC to JPEG. 
+
+In addition, the orientation of the card may be problem. We did not include a step to check the orientation of the card before extracting the text, though this is something that can be added.
