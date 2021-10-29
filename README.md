@@ -6,11 +6,11 @@ The purpose of this tool is to extract text from vaccine cards and generate a CS
 
 A card is considered valid if it meets the following:
 
-1. Contains the phrase "COVID-19 Vaccination" AND
+1. Contains the phrase "COVID-19 Vaccination" **AND**
 2. Has at least 2 out of the 3 criteria:
- * Has at least one dose date
- * Has a manufacturer
- * Has at least one lot number
+   * Has at least one dose date
+   * Has a manufacturer
+   * Has at least one lot number
 
 ## Software Installation
 
@@ -30,9 +30,9 @@ Example:
 
 Parameters:
 
--dir: directory containing vaccine card images
--vaccine: CSV file containing WHO approved vaccines
--config: JSON file containing full paths to Poppler and Pytesseract
+ * dir: directory containing vaccine card images
+ * vaccine: CSV file containing WHO approved vaccines
+ * config: JSON file containing full paths to Poppler and Pytesseract
 
 ## Example with test images
 
