@@ -4,7 +4,7 @@ This pipeline generates a data frame containing data extracted from images of CO
 
 ## Validation Criteria
 Validity of card data extraction was assessed through meeting the following requirements:
-  * Achieve a fuzzy match score of at least 0.8 to one of the terms "COVID-19 Vaccination" or "COVID-19 Vaccine"
+  * Achieve a fuzzy match score of at least 0.8 to one of the terms "COVID-19 Vaccination" or "COVID-19 Vaccine" AND
   * Meet 2 out of the 3 data criteria:
     - Has at least one dose date
     - Has manufacturer
@@ -37,3 +37,4 @@ Example:
 
 ## Future directions:
 * Additional file support (PDF and HEIC) in development
+* We hope to improve capture of lot numbers.
