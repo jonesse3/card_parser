@@ -32,9 +32,9 @@ Example:
 
 Parameters:
 
- * dir: directory containing vaccine card images
- * vaccine: CSV file containing WHO approved vaccines
- * config: JSON file containing full paths to Poppler and Pytesseract
+ * *dir*: directory containing vaccine card images
+ * *vaccine*: CSV file containing WHO approved vaccines
+ * *config*: JSON file containing full paths to Poppler and Pytesseract
 
 ## Description of CSV output file
 
@@ -55,7 +55,7 @@ Parameters:
 
 ## Example with test images
 
-We have provided the following images in the test_images folder for testing the tool. 
+We have provided the following images in the *test_images* folder for testing the tool. 
 
 ![Image 1](/test_images/255555_vaccine_card.PNG)
 
