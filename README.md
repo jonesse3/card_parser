@@ -8,7 +8,7 @@ A card is considered valid if it meets the following:
 
 1. Contains the phrase "COVID-19 Vaccination" **AND**
 2. Has at least 2 out of the 3 criteria:
-   * Has at least one dose date
+   * Has at least one dose date (dates are expected to be in month day year format)
    * Has a manufacturer
    * Has at least one lot number
 
