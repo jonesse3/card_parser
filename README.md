@@ -36,6 +36,29 @@ Parameters:
  * vaccine: CSV file containing WHO approved vaccines
  * config: JSON file containing full paths to Poppler and Pytesseract
 
+## Description of output file
+
+| Variable  | Data type | Description
+| ----------| ----------| -----------|
+| filename  | string  | name of file |
+| hhs_id  | string | individual's ID number |
+| has_covid_words | string | *yes* or *no* if card has the phrase "COVID-19 vaccination" |
+| vax_dates | list of strings | any date from 2020 and 2021 |
+| manufacturer | string | vaccine manufacturer (i.e. *Pfizer*) |
+| lot_numbers | list of strings | lot number | 
+| flags | string | message related to processing of the file (i.e. *File could not be read*) |
+| has_at_least_one_lot_number | integer | 1 if yes, 0 if no |
+| has_manufacturer | integer | 1 if yes, 0 if no |
+| has_at_least_one_date | integer | 1 if yes, 0 if no |
+| number_valid_checks | integer | 0 to 3; sum of the values of the previous 3 variables |
+| valid | integer | 1 if yes, 0 if no; card has "COVID-19 vaccination" phrase and at least 2 out of the 3 criteria met |
+
+
+
+
+
+
+
 ## Example with test images
 
 ## Limitations and Future Work
