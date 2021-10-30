@@ -90,13 +90,13 @@ An example of the CSV output is provided for the above two images: *example_vacc
 
 ## Limitations:
 * This tool only works for typed, English text.
-* This tool does not currently handle HEIC or PDF files, but support for both file types is in progress.
+* This tool does not currently handle HEIC files, but support for this file type is in progress.
 * Card orientation may be a problem. We did not include a step to check the orientation of the card before extracting the text, though this is something that can be added.
 * This tool was optimized for US CDC COVID-19 Vaccination cards and may not perform as well for other vaccine documentation (such as international cards or medical records).
 * Only one manufacturer is selected from this tool, so it will not accurately capture documentation for vaccines with doses from different manufacturers.
 * Multiple delimiters for dates are accepted but the order needs to be month, day, year to be captured by this tool.
 
 ## Future directions:
-* Additional file support (PDF and HEIC) in development.
+* Additional file support (HEIC) in development.
 * Card orientation verification and improvement is in development.
 * The main limitation of this tool is that it performs poorly on extracting text from handwritten images. Utilizing services such as Google's Google Cloud Vision API, Microsoft's Azure Computer Vision API, and Amazon's Textract and Rekognition will improve the performance of this tool on handwritten images.
