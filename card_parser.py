@@ -277,7 +277,7 @@ if __name__ == "__main__":
 
     p.add_argument("-dir", help = "directory containing vaccine cards", required = True)
     p.add_argument("-config", help = "json file containing full paths to pytesseract and poppler", required = True)
-    p.add_argument("-vaccine", help = "csv file containing WHO approved vaccines", required = True)
+    p.add_argument("-vaccine", help = "excel file containing WHO approved vaccines", required = True)
 
     # parse arguments
     args = p.parse_args()
