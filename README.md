@@ -99,4 +99,5 @@ An example of the CSV output is provided for the above two images: *example_vacc
 ## Future directions:
 * Additional file support (HEIC) in development.
 * Card orientation verification and improvement is in development.
+* Process the images to improve the quality of the images for text extraction.
 * The main limitation of this tool is that it performs poorly on extracting text from handwritten images. Utilizing services such as Google's Google Cloud Vision API, Microsoft's Azure Computer Vision API, and Amazon's Textract and Rekognition will improve the performance of this tool on handwritten images.
