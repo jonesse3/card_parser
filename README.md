@@ -2,7 +2,7 @@
 
 ## Description of the tool:
 
-This tool generates a .csv containing data extracted from images of COVID-19 Vaccine cards and similar documentation. It currently only works for typed, English text and has several other [limitations](#limitations), several of which are currently being [updated](#future-directions).  
+This tool generates a CSV file containing data extracted from images of COVID-19 Vaccine cards and similar documentation. It currently only works for typed, English text and has several other [limitations](#limitations), several of which are currently being [updated](#future-directions).  
 
 The pipeline uses optical character recognition (OCR) and [open source Python packages](#software-installation) to read typed text from images, then the text is searched for [data of interest](#description-of-csv-output-file). Cards are assessed as valid or not valid based on [criteria](#validation-criteria) described below. Any sssues retrieving data result in [error flags](#description-of-csv-output-file) and empty data entries in the CSV output file. A full walk through can be found [here](#how-to-use).  
 
