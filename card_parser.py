@@ -27,7 +27,6 @@ warnings.filterwarnings("ignore")
 # Functions
 #############
 
-#check if filepath exists and return valid filepath
 def check_path(filepath):
     """
     Check if filepath exists.
